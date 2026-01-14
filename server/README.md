@@ -2,11 +2,11 @@
 
 Backend server for the Task Management System built with Node.js, Express, MongoDB, and JWT authentication.
 
-## ⚠️ Security Alert
+## Security Alert
 
 **IMPORTANT:** If you cloned this repository before January 14, 2026, please read [SECURITY_ALERT.md](../SECURITY_ALERT.md) immediately. MongoDB credentials were temporarily exposed and have been removed.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Node.js** - JavaScript runtime
 - **Express.js** - Web framework
@@ -58,7 +58,7 @@ PORT=5000
 NODE_ENV=development
 ```
 
-**⚠️ IMPORTANT SECURITY NOTES:**
+**IMPORTANT SECURITY NOTES:**
 - Replace `<username>`, `<password>`, `<cluster>`, and `<database>` with your actual MongoDB Atlas credentials
 - **NEVER** commit the `.env` file to version control
 - The `.env` file is already in `.gitignore` - keep it that way
@@ -77,7 +77,7 @@ npm run dev
 
 Server will run on `http://localhost:5000`
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Authentication Routes
 

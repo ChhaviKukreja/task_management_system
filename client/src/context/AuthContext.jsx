@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }) => {
       return { success: true };
     } catch (error) {
       const message = error.response?.data?.message || 'Registration failed';
-      toast.error(message);
+      toast.error(message, { duration: 5000 }); // Longer duration for errors
       return { success: false, message };
     }
   };
@@ -84,7 +84,7 @@ export const AuthProvider = ({ children }) => {
       return { success: true };
     } catch (error) {
       const message = error.response?.data?.message || 'Login failed';
-      toast.error(message);
+      toast.error(message, { duration: 5000 }); // Longer duration for errors
       return { success: false, message };
     }
   };

@@ -1,6 +1,6 @@
 # Task Management System API - Complete Documentation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Start the Server
 ```bash
@@ -16,7 +16,7 @@ Server will run on: `http://localhost:5000`
 
 ---
 
-## 📡 API Endpoints Reference
+## API Endpoints Reference
 
 ### Base URL
 ```
@@ -25,7 +25,7 @@ http://localhost:5000/api
 
 ---
 
-## 🔐 Authentication Endpoints
+## Authentication Endpoints
 
 ### 1. Register User
 **POST** `/api/auth/register`
@@ -112,7 +112,7 @@ Authorization: Bearer <your-token>
 
 ---
 
-## 📋 Task Management Endpoints
+## Task Management Endpoints
 
 > **Note:** All task endpoints require authentication via Bearer token
 
@@ -310,7 +310,7 @@ GET /api/tasks?status=Pending&priority=High&sortBy=dueDate&order=asc
 
 ---
 
-## 🧪 Testing with PowerShell
+## Testing with PowerShell
 
 ### 1. Register and Login
 ```powershell
@@ -406,7 +406,7 @@ Invoke-RestMethod -Uri "http://localhost:5000/api/tasks/$taskId" -Method Delete 
 
 ---
 
-## 🔧 MongoDB Aggregation Pipeline Details
+## MongoDB Aggregation Pipeline Details
 
 The `/api/tasks/stats` endpoint uses MongoDB aggregation pipelines:
 
@@ -441,7 +441,7 @@ The `/api/tasks/stats` endpoint uses MongoDB aggregation pipelines:
 
 ---
 
-## 📚 Swagger Documentation Setup
+## Swagger Documentation Setup
 
 ### Installation
 ```bash
@@ -452,12 +452,12 @@ npm install swagger-ui-express swagger-jsdoc
 Location: `server/config/swagger.js`
 
 ### Features
-- ✅ OpenAPI 3.0 specification
-- ✅ JWT Bearer authentication
-- ✅ Auto-generated from JSDoc comments
-- ✅ Interactive API testing interface
-- ✅ Schema definitions for models
-- ✅ Request/response examples
+- OpenAPI 3.0 specification
+- JWT Bearer authentication
+- Auto-generated from JSDoc comments
+- Interactive API testing interface
+- Schema definitions for models
+- Request/response examples
 
 ### Access Swagger UI
 ```
@@ -472,7 +472,7 @@ http://localhost:5000/api-docs
 
 ---
 
-## ⚡ Advanced Features
+## Advanced Features
 
 ### Query Filtering
 - Filter by status, priority, category
@@ -498,7 +498,7 @@ http://localhost:5000/api-docs
 
 ---
 
-## 🎯 Status Codes
+## Status Codes
 
 | Code | Description |
 |------|-------------|
@@ -511,7 +511,7 @@ http://localhost:5000/api-docs
 
 ---
 
-## 🔒 Authentication Headers
+## Authentication Headers
 
 All protected endpoints require:
 ```
@@ -522,7 +522,7 @@ Get the token from `/api/auth/login` or `/api/auth/register` response.
 
 ---
 
-## 📝 Task Model Schema
+## Task Model Schema
 
 ```javascript
 {
@@ -540,7 +540,7 @@ Get the token from `/api/auth/login` or `/api/auth/register` response.
 
 ---
 
-## 💡 Tips
+## Tips
 
 1. **Always include the Authorization header** for task endpoints
 2. **Use Swagger UI** for interactive API testing
@@ -550,7 +550,7 @@ Get the token from `/api/auth/login` or `/api/auth/register` response.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Access denied. No token provided"
 - Include `Authorization: Bearer <token>` header
@@ -565,7 +565,7 @@ Get the token from `/api/auth/login` or `/api/auth/register` response.
 
 ---
 
-## 📞 Support
+## Support
 
 For issues or questions, refer to:
 - Swagger Documentation: http://localhost:5000/api-docs
