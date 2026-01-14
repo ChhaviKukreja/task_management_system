@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:5173", "task-management-system-omega-one.vercel.app"],
+  origin: ["http://localhost:5173", "https://task-management-system-omega-one.vercel.app"],
   credentials: true
 }));
 
