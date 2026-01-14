@@ -2,7 +2,11 @@
 
 Backend server for the Task Management System built with Node.js, Express, MongoDB, and JWT authentication.
 
-## Tech Stack
+## ⚠️ Security Alert
+
+**IMPORTANT:** If you cloned this repository before January 14, 2026, please read [SECURITY_ALERT.md](../SECURITY_ALERT.md) immediately. MongoDB credentials were temporarily exposed and have been removed.
+
+## 🛠️ Tech Stack
 
 - **Node.js** - JavaScript runtime
 - **Express.js** - Web framework
@@ -39,14 +43,27 @@ npm install
 
 ### Environment Variables
 
-Create a `.env` file in the server directory with the following:
+Create a `.env` file in the server directory:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and add your actual credentials:
 
 ```env
-MONGO_URI=mongodb+srv://padamgoelbt23cseds:dinesh12@cluster0.sxzib.mongodb.net/task-management-system?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
 PORT=5000
 NODE_ENV=development
 ```
+
+**⚠️ IMPORTANT SECURITY NOTES:**
+- Replace `<username>`, `<password>`, `<cluster>`, and `<database>` with your actual MongoDB Atlas credentials
+- **NEVER** commit the `.env` file to version control
+- The `.env` file is already in `.gitignore` - keep it that way
+- Use `.env.example` for documentation and sharing template
+- Rotate credentials immediately if accidentally exposed
 
 ### Run the Server
 
